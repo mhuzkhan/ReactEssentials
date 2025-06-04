@@ -26,18 +26,14 @@ jobs:
           version: 9
           run_install: false
 
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        run: |
-          echo "Getting pnpm store path..."
-          store_path=$(pnpm store path)
-          echo "store_path=$store_path" >> "$GITHUB_ENV"
-          echo "store_path=$store_path" >> "$GITHUB_OUTPUT"
+      - name: Set pnpm store path
+        id: pnpm-store
+        run: echo "store_path=$(pnpm store path)" >> $GITHUB_OUTPUT
 
       - name: Setup pnpm cache
         uses: actions/cache@v4
         with:
-          path: ${{ env.store_path }}
+          path: ${{ steps.pnpm-store.outputs.store_path }}
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
