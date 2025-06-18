@@ -17,10 +17,10 @@ importers:
     devDependencies:
       '@types/react':
         specifier: ^19.1.6
-        version: 19.1.6
+        version: 19.1.8
       '@types/react-dom':
         specifier: ^19.1.6
-        version: 19.1.6(@types/react@19.1.6)
+        version: 19.1.6(@types/react@19.1.8)
       '@vitejs/plugin-react':
         specifier: ^4.5.1
         version: 4.5.2(vite@6.3.5)
@@ -525,8 +525,8 @@ packages:
     peerDependencies:
       '@types/react': ^19.0.0
 
-  '@types/react@19.1.6':
-    resolution: {integrity: sha512-JeG0rEWak0N6Itr6QUx+X60uQmN+5t3j9r/OVDtWzFXKaj6kD1BwJzOksD0FF6iWxZlbE1kB0q9vtnU2ekqa1Q==}
+  '@types/react@19.1.8':
+    resolution: {integrity: sha512-AwAfQ2Wa5bCx9WP8nZL2uMZWod7J7/JSplxbTmBQ5ms6QpqNYm672H0Vu9ZVKVngQ+ii4R/byguVEUZQyeg44g==}
 
   '@vitejs/plugin-react@4.5.2':
     resolution: {integrity: sha512-QNVT3/Lxx99nMQWJWF7K4N6apUEuT0KlZA3mx/mVaoGj3smm/8rc8ezz15J1pcbcjDK0V15rpHetVfya08r76Q==}
@@ -1861,11 +1861,11 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/react-dom@19.1.6(@types/react@19.1.6)':
+  '@types/react-dom@19.1.6(@types/react@19.1.8)':
     dependencies:
-      '@types/react': 19.1.6
+      '@types/react': 19.1.8
 
-  '@types/react@19.1.6':
+  '@types/react@19.1.8':
     dependencies:
       csstype: 3.1.3
 
